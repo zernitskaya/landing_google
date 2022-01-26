@@ -1,0 +1,12 @@
+body {
+  font-family: $basic-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.16;
+  color: #000;
+  background: #fff;
+}
+
+.error.error {
+  border: 1px solid #ff0000;
+}

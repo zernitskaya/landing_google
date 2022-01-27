@@ -1,0 +1,21 @@
+.content {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 280px;
+  padding-right: 280px;
+
+  @include media-xl {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @include media-md {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include media-exsm {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

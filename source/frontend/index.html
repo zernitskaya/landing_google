@@ -5,65 +5,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>landing_google</title>
+  <title>landing_google-form</title>
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
-  <section class="landing_google">
-    <div class="landing_google__wrap content">
-      <div class="landing_google__top-side">
-        <div class="landing_google__button-wrap">
-          <button class="btn landing_google__btn">
-            Купить Акции
+  <header class="header">
+    <div class="header__wrap content">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="" class="header__link">
+              Как купить
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">
+              Рост Акций
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">
+              8 Причин купить
+            </a>
+          </li>
+        </ul>
+        <div class="header__btn-wrap">
+          <button class="btn header__btn">
+            Заказать звонок
           </button>
         </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="stock">
+    <div class="stock__wrap content">
+      <div class="stock__heading-wrap">
+        <h1 class="stock__heading">
+          Покупай Акции
+          <span class="stock__blue">g</span>
+          <span class="stock__red">o</span>
+          <span class="stock__yelow">o</span>
+          <span class="stock__blue">g</span>
+          <span class="stock__green">l</span>
+          <span class="stock__red">e</span>
+        </h1>
       </div>
 
-      <div class="landing_google__bottom-side">
-        <div class="landing_google__left-wrap">
-          <div class="landing_google__top-img-wrap">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="../img/man.webp"> -->
-              <!-- <source type="image/webp" media="(min-width: 768px)" srcset="../img/man-mobile.webp"> -->
-              <img src="../img/Google_org_logo.png" alt="" class="landing_google__img-google">
-            </picture>
-          </div>
-
-          <h1 class="landing_google__heading">
-            Покупайте Акции Google
-            <span class="landing_google__red-text"> Доходность +40% </span> в год
-          </h1>
-
-          <ul class="landing_google__list">
-            <li class="landing_google__item">
-              Акции Google показывают стабильный рост 13 лет
-            </li>
-            <li class="landing_google__item">
-              Акции Google в три раза выросли
-            </li>
-          </ul>
-
-          <div class="landing_google__btn-wrap">
-            <button class="btn landing_google__btn">
-              Купить Акции
-            </button>
-          </div>
-        </div>
-
-        <div class="landing_google__right-wrap">
-          <div class="landing_google__bottom-img-wrap">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="../img/man.webp"> -->
-              <!-- <source type="image/webp" media="(min-width: 768px)" srcset="../img/man-mobile.webp"> -->
-              <img class="landing_google__img" src="./img/man.png" alt="man">
-            </picture>
-          </div>
-        </div>
+      <div class="stock__text__wrap">
+        <p class="stock__text">
+          Стань акционером Google сегодня! Потенциал дохода 12% за месяц!
+        </p>
       </div>
 
+      <form class="stock__form">
+        <span class="stock__form-text">
+          Введите номер телефона
+        </span>
+
+        <input class="stock__form-input" type="text" placeholder="+7(000)000-00-00">
+
+        <span class="stock__form-text">
+          Ваше имя
+        </span>
+        <input class="stock__form-input" type="text" placeholder="Как можно к Вам обращаться?">
+
+        <div class="stock__form-wrapper-btn">
+          <button class="btn stock__form-btn">
+            Купить акции
+          </button>
+        </div>
+      </form>
     </div>
   </section>
+
 </body>
 
 </html>

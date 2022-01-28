@@ -1,10 +1,14 @@
 .stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url('../img/stock-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 100px;
 
   @include media-max {
     height: 100%;
@@ -12,7 +16,6 @@
 }
 
 .stock__wrap {
-  padding-top: 245px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,14 +33,25 @@
   text-transform: uppercase;
   padding: 0 50px 50px 50px;
 
-  @include media-xl {
+  @include media-max {
+    width: 760px;
+  }
+
+  @include media-lg {
     font-size: 36px;
     text-align: center;
+    width: 100%;
   }
 
   @include media-md {
     padding: 0 0 82px 0;
+    width: 100%;
   }
+}
+
+.stock__google-wrap {
+  white-space: nowrap;
+  text-align: center;
 }
 
 .stock__google {
@@ -51,6 +65,10 @@
 
 .stock__blue {
   color: #4285f4;
+
+  @include media-xl {
+  padding: 0;
+  }
 }
 
 .stock__red {
@@ -63,6 +81,10 @@
 
 .stock__green {
   color: #34a853;
+}
+
+.stock__blue2 {
+  color: #4285f4;
 }
 
 
@@ -83,13 +105,15 @@
   display: flex;
   align-items: flex-end;
 
+
   @include media-max {
-    flex-direction: column;
-    padding-bottom: 233px;
+    // flex-direction: column;
+padding-bottom: 133px;
   }
 
-  @include media-md {
+  @include media-lg {
     width: 100%;
+     flex-direction: column;
   }
 }
 
@@ -97,7 +121,7 @@
   display: flex;
   flex-direction: column;
 
-  @include media-max {
+  @include media-lg {
     width: 100%;
   }
 }
@@ -119,15 +143,19 @@
   margin-right: 12px;
   padding-left: 20px;
 
-  @include media-max {
+  @include media-lg {
     width: 100%;
+  }
+
+  @include hover {
+    opacity: 0.7;
   }
 }
 
 .stock__form-wrapper-btn {
   width: 100%;
 
-  @include media-max {
+  @include media-lg {
     width: 100%;
     padding-top: 24px;
   }
@@ -140,8 +168,15 @@
   text-transform: none;
   font-size: 14px;
   font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  @include media-max {
+  @include media-lg {
     width: 100%;
+  }
+
+  @include hover {
+    opacity: 0.7;
   }
 }

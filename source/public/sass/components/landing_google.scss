@@ -13,6 +13,14 @@
   }
 }
 
+.landing_google__top-side {
+  padding-bottom: 150px;
+
+  @include media-max {
+    padding-bottom: 0;
+  }
+}
+
 .landing_google__wrap {
   display: flex;
   flex-direction: column;

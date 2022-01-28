@@ -47,8 +47,9 @@
 .header__item:last-child {
   padding-right: 72px;
 
-  @include media-md {
-  padding-right: 0;
+
+  @include media-lg {
+    padding-right: 0;
   }
 }
 
@@ -57,7 +58,7 @@
 }
 
 .header__btn {
-  width: 296px;
+  max-width: 296px;
   height: 52px;
 
   @include  mob {

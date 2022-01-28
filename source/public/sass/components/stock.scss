@@ -34,12 +34,12 @@
   padding: 0 50px 50px 50px;
 
   @include media-max {
-    width: 760px;
+    padding-top: 50px;
+    text-align: center;
   }
 
   @include media-lg {
     font-size: 36px;
-    text-align: center;
     width: 100%;
   }
 
@@ -87,7 +87,6 @@
   color: #4285f4;
 }
 
-
 .stock__text {
   font-size: 36px;
   padding-bottom: 112px;
@@ -105,15 +104,13 @@
   display: flex;
   align-items: flex-end;
 
-
   @include media-max {
-    // flex-direction: column;
-padding-bottom: 133px;
+    padding-bottom: 133px;
   }
 
   @include media-lg {
     width: 100%;
-     flex-direction: column;
+    flex-direction: column;
   }
 }
 

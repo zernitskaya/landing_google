@@ -58,6 +58,10 @@
 .landing_google__left-wrap {
   width: 40%;
 
+  @include media-xl {
+    width: 50%;
+  }
+
   @include media-exsm {
     width: 100%;
     display: flex;
@@ -70,7 +74,10 @@
   width: 60%;
   align-self: flex-end;
   flex-shrink: 0;
-  // position: relative;
+
+  @include media-xl {
+    width: 50%;
+  }
 
   @include media-exsm {
     width: 100%;
@@ -137,10 +144,6 @@
   width: 111%;
 
   @include media-max {
-
-  }
-
-  @include media-exsm {
-
+    width: 100%;
   }
 }
